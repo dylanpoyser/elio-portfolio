@@ -16,12 +16,72 @@
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+/* #Hero {
+
+  position: fixed;
+  top: -50%;
+  left: -50%;
+  right: -50%;
+  bottom: -50%;
+  width: 200%;
+  height: 200vh;
+  background: transparent url(/elio-portfolio/public/noise-transparent.png) repeat 0 0;
+  background-repeat: repeat;
+  animation: bg-animation .2s infinite;
+  opacity: .9;
+  visibility: visible;
+
+
+  
+} */
+/* @keyframes bg-animation {
+  0% { transform: translate(0,0) }
+  10% { transform: translate(-5%,-5%) }
+  20% { transform: translate(-10%,5%) }
+  30% { transform: translate(5%,-10%) }
+  40% { transform: translate(-5%,15%) }
+  50% { transform: translate(-10%,5%) }
+  60% { transform: translate(15%,0) }
+  70% { transform: translate(0,10%) }
+  80% { transform: translate(-15%,0) }
+  90% { transform: translate(10%,5%) }
+  100% { transform: translate(5%,0) }
+} */
+
+#about {
+  background: rgba( 255, 255, 255, 0.2 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 4px );
+-webkit-backdrop-filter: blur( 4px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
+
+#hero {
+  background: linear-gradient(to bottom,  #FEA141, 70%, transparent)
+}
+body {
+  color: #f7aa5c;
+  background: linear-gradient(to bottom, #2D0355, #7D0377), transparent url(/elio-portfolio/public/noise-transparent.png) repeat 0 0;
+  background-size: 100% 200%;
+  background-repeat: no-repeat;
+  height: 100%;
+  animation: bg-pulse 10s ease-in-out infinite;
+
+}
+
+@keyframes bg-pulse {
+
+  0% { 
+    background-position: 0 0;
+  }
+
+  50% {
+    background-position: 0 -100vh; 
+  }
+
+  100% {
+    background-position: 0 0;
+  }
+}
+
